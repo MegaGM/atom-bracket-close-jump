@@ -29,4 +29,4 @@ module.exports = BracketCloseJump =
     editor = atom.workspace.getActiveTextEditor()
     cursor_pos = editor.getCursorBufferPosition()
     row_text = editor.lineTextForBufferRow(cursor_pos.row)
-    return row_text[cursor_pos.column] in [')', ']','}', "'", '"' ]
+    return row_text[cursor_pos.column] in [')', ']','}', "'", '"', ':', ';' ]
